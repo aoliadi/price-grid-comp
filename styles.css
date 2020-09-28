@@ -1,0 +1,147 @@
+* {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%)
+    
+    --weight400: 400;
+    --weight700: 700;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 1rem;
+    text-align: var(--text-align);
+    color: var(--very-dark-blue);
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 900px;
+    margin: 2em auto;
+    box-shadow: 0 1px 0px rgba(0,0,0,0.07), 0px -1px 4px rgba(1,0,0,0.05);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.section1__container {
+    width: 100%;
+}
+
+.section2__container, .section3__container {
+    width: 50%;
+    flex: 1 1 calc(320px - 3em);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+/*
+========
+section1
+========
+*/
+.section {
+    padding: 3em;
+}
+
+.section1__heading {
+    font-size: 1.5em;
+    font-weight: var(--weight700);
+    color: var(--cyan);
+}
+
+.section1__paragraph {
+    color: var(--grayish-blue);
+    font-size: 1em;
+    font-weight: var(--weight400);
+}
+
+.section1__paragraph--colored {
+    color: var(--bright-yellow);
+    margin: 1.5em 0;
+    font-weight: var(--weight700);
+}
+
+/*
+========
+section2
+========
+*/
+.section2__container {
+    background-color: var(--cyan);
+    color: #fff;
+}
+
+.section2__paragraph1 {
+    margin: 1.5em 0 0.5em;
+    color: var(--light-gray);
+}
+
+.section2__paragraph2 {
+    margin: 0.5em 0 1.5em;
+}
+
+.dollar {
+    font-size: 2.5em;
+    color: #fff;
+    margin-right: 0.5em;
+}
+
+.section2__btn {
+    background-color: var(--bright-yellow);
+    color: #fff;
+    width: 100%;
+    padding: 0.8em 0;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/*
+========
+section3
+========
+*/
+.section3__container {
+    color: #fff;
+    background-color: var(--cyan);
+    opacity: 0.8;
+}
+
+.section3__heading, .section3__list-item {
+    margin-bottom: 1em;
+}
+
+.section3__list-container {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.section3__list-item {
+    font-size: 1em;
+}
+
+.footer__container {
+    text-align: center;
+    padding: 2em 3em;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
